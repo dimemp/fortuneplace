@@ -1,0 +1,166 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Find a completely random place to go out today. You never know what or who you are going to meet.">
+        <meta name="author" content="Dimitris Dimosiaris">
+        <meta property="og:url" content=""/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Fortuneplace | Find a completely random place to go out today."/>
+        <meta property="og:site_name" content="Fortuneplace | Find a completely random place to go out today."/>
+        <meta property="og:description" 
+                content="Find a completely random place to go out today. You never know what or who you are going to meet."
+        />
+        <meta property="og:image" content="content/img/facebook_open_graph.png"/>
+        <title>Fortuneplace | Find a completely random place to go out today.</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="content/img/favicon.png">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/basic.css">
+        <link rel="stylesheet" href="css/landing.css">
+    </head>
+    <body>
+    <!-- Navigation Bar Section -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex bd-highlight">
+            <a class="navbar-brand p-2 flex-grow-1 bd-highlight" href="#">
+                <img src="content/img/logo.png" width="150" height="30" alt="logo">
+            </a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="jumbotron jumbotron-fluid welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-9 col-md-7 mx-auto welcome-section-title text-center">
+                    <h1 class="title-welcome">Let karma guide you</h1>
+                    <p class="px-5">Find a completely random place to go out today. You never know what or who you are going to meet.</p>
+                    <form class="form-inline mt-5" action="index.html" method="GET" id="searchform">
+                        <div class="col-12 mx-auto">
+                            <input class="form-control shadow mr-sm-2" aria-describedby="inputHelp" type="text" name="query" id="query-input">
+                            <button class="btn btn-primary my-2 my-lg-0 btn-big-pad btn-call-to-action shadow" id="submit-btn" type="submit" data-toggle="modal" data-target="#placeModal">Take over karma</button>
+                            <small id="inputHelp" class="form-text text-muted pl-0 pl-sm-5 mt-2 text-left">Are you going out for a drink, beer, coffee, food?</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As seen section -->
+    <section id="section-as-seen">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4 font-weight-bold">As seen as</h2>
+                </div>
+                <div class="col-8 col-sm-10 col-md-9 col-lg-7 mx-auto mt-4">
+                    <div class="row text-center">
+                        <div class="col-12 col-sm-4 mb-3 mt-4">
+                            <img src="content/img/product_hunt.png" class="clients-logo img-fluid" alt="product hunt logo">
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <img src="content/img/designer_news.png" class="clients-logo w-50" alt="designer news logo">
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3 mt-4">
+                            <img src="content/img/hacker_news.png" class="clients-logo img-fluid" alt="hacker news logo">
+                        </div>                    
+                    </div>
+                </div>   
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="section-contact">
+        <div class="container">
+            <div class="row contact-wrapper">
+                <div class="col-12 col-md-8">
+                    <h2 class="font-weight-bold">Send us your story using fortuneplace app</h2>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-primary btn-big-pad btn-call-to-action mt-4 mt-sm-2 mt-md-0 shadow" onClick="">Contact us</button>
+                </div>
+            </div>         
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="pl-0 mb-2">
+                        <li class="footer-list-item"><a href="index.html">Home</a></li>
+                        <li class="footer-list-item"><a href="mailto:dimitrisdimosiaris@gmail.com">Contact</a></li>
+                        <li class="footer-list-item"><a href="terms.html">Privacy</a></li>
+                        <li class="footer-list-item"><a href="https://twitter.com/DimiDimos" target="_blank">Twitter</a></li>
+                        <li class="footer-list-item"><a href="http://portfolio.dimosiaris.me/" target="_blank">Maker</a></li>
+                    </ul>
+                    <div class="py-2 mb-2">
+                        <img src="content/img/logo.png" id="footer-logo" alt="logo">
+                    </div>
+                    <p>2018-2020 fortuneplace. All rights reserved ©.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade pr-0" id="placeModal" tabindex="-1" role="dialog" aria-labelledby="placeModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header py-1">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">             
+                    <div class="row mb-3">
+                        <div class="col-4 col-sm-3 mx-auto">
+                            <img src="content/img/bistro.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-10 col-sm-8">
+                            <h5 class="font-weight-bold" id="venue-name"></h5>
+                            <p id="venue-address"></p>
+                            <p id="venue-phone"></p>
+                            <p id="venue-checkins"></p>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center">
+                            <h6 class="pl-1 pb-2">Share the app</h6>
+                            <ul class="share-social-links pl-0 mt-2">
+                                <li id="btn-facebook" data-type="facebook" data-popup="true">
+                                    <div class="fb-share-button" data-href="https://dimemp.github.io/fortuneplace/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="btn btn-social shadow fb-xfbml-parse-ignore" id="btn-share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://dimemp.github.io/fortuneplace/%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-square btn-icon-social-share"></i>Facebook</a></div>
+                                </li>
+                                <li class="mt-2" data-type="twitter" data-popup="true" data-popup-height="305">
+                                    <a class="btn btn-social twitter-share-button shadow" id="btn-share-twitter" href="https://twitter.com/intent/tweet?text=Following%20the%20karma%20today!%20Using%20fortuneplace%20cool%20app.%20Are%20you%20brave%20enough%20to%20try%20it?&url=https%3A%2F%2Fdimemp.github.io%2Ffortuneplace%2F&hashtags=fourtuneplace&via=DimiDimos&related=DimiDimos" role="button"><i class="fa fa-twitter btn-icon-social-share"></i>Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-0" id="mapcontainer">        
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquerry.v2.1.4.min.js"></script>
+    <script src="js/poper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBcjE5fVLwgBa6nX1q6-hxXA9M86wjmhoQ&sensor=false"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/fireworks.js"></script>
+    <script src="js/stats.min.js"></script>
+  </body>
+</html>
