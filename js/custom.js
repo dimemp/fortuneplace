@@ -37,8 +37,8 @@ $(function() {
 	function clearpreviousinputs() {
 		$("#venue-name").html("");
 		$("#venue-address").html("");
-		$("#venue-phone").html("");
-		$("#venue-checkins").html("");
+		$("#venue-distance").html("");
+		$("#venue-category").html("");
 	}
 	
 	function getVenues() {
@@ -56,8 +56,7 @@ $(function() {
                 
                 if (arraylength == 0) {
                 	msgTitle = "The place you are looking does exists in onother planet, not on earth!";
-                	appendeddataerror = '<div class="error"><p> '+ msgTitle +' </p><img src="images/grass_planet.jpg"></div>';
-                	$("#venues").append(appendeddataerror);
+                	$("#venue-name").append(msgTitle);
                 }
 
 				// Rebuild the map using data.
@@ -81,20 +80,17 @@ $(function() {
 					if (this.venue.location.address) {
 						address = '<span class="title-venues-modal">Address:</span><span>'+this.venue.location.address+'</span>';
 						$("#venue-address").append(address);
-					} else {
-						address = "";
-					}
+					} 
 					
-					if (this.venue.contact.formattedPhone) {
-						phone = '<span class="title-venues-modal">Phone:</span><span>'+this.venue.contact.formattedPhone+'</span>';
-						$("#venue-phone").append(phone);
-					} else {
-						phone = "";
-					}				
+					if (this.venue.location.distance) {
+						distance = '<span class="title-venues-modal">Distance:</span><span>'+this.venue.location.distance+' meters</span>';
+						$("#venue-distance").append(distance);
+					} 			
 
-					if (this.venue.stats.checkinsCount) {
-						checkins = '<span class="title-venues-modal">Total Checkins:</span><span>'+this.venue.stats.checkinsCount+'</span>';
-						$("#venue-checkins").append(checkins);
+					if (this.venue.categories[0].name) {
+						category = '<span class="title-venues-modal">Category:</span><span>'+this.venue.categories[0].name+'</span>';
+						console.log(category, true)
+						$("#venue-category").append(category);
 					}
 					
 					// Build marker
