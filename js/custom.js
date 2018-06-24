@@ -116,7 +116,6 @@ $(function() {
 	
 	
 	function mapbuild() {
-		$("#venues").hide();
 		var myOptions = {
 		zoom:5,
 		center: new google.maps.LatLng(37,20),
@@ -133,13 +132,10 @@ $(function() {
 // Fireworks
 $(function () {
 	$('#submit-btn').clickFireworks({
-
 	// canvas id
 	id: 'fireworks',
-
 	// append canvas to where, default is body
-	appendTo: '.modal',
-	 
+	appendTo: '.modal', 
 	// canvas z-index, make it higher than anything on the page
 	zIndex: 1000	     
 	});
